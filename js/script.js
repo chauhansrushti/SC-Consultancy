@@ -13,6 +13,7 @@ function initializeApp() {
     addScrollAnimations();
     setupNavbarActiveState();
     setupSmoothScrolling();
+    setupMobileNavbar();
 }
 
 // Initialize Bootstrap Carousel
@@ -216,6 +217,27 @@ function createScrollToTopButton() {
 }
 
 createScrollToTopButton();
+
+// Setup mobile navbar dropdown behavior
+function setupMobileNavbar() {
+    const dropdownToggle = document.getElementById('aboutDropdown');
+    
+    function updateNavbarBehavior() {
+        if (window.innerWidth < 992) {
+            if (dropdownToggle) {
+                dropdownToggle.removeAttribute('data-bs-toggle');
+                dropdownToggle.classList.remove('dropdown-toggle');
+            }
+        } else {
+            if (dropdownToggle) {
+                dropdownToggle.setAttribute('data-bs-toggle', 'dropdown');
+            }
+        }
+    }
+    
+    updateNavbarBehavior();
+    window.addEventListener('resize', updateNavbarBehavior);
+}
 
 // Log app initialization
 console.log('SC Consultancy - Frontend initialized successfully!');
