@@ -1,0 +1,466 @@
+/* ============================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   ============================================ */
+
+/* Extra Small Devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero-carousel {
+        min-height: 500px;
+        max-height: 500px;
+        overflow: hidden;
+    }
+
+    .hero-video {
+        width: 96%;
+        height: 300%;
+        object-fit: cover;
+        object-position: right;
+
+    }
+
+    .hero-content-wrapper {
+        height: 440px;
+        padding-left: 20px;
+        padding-top: 60px;
+        padding-right: 20px;
+        overflow: hidden;
+    }
+
+    .hero-title {
+        font-size: 1.9rem;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+    }
+
+    .hero-description {
+        font-size: 0.98rem;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 0.5rem;
+        width: auto;
+        flex-wrap: wrap;
+    }
+
+    .hero-buttons .btn {
+        width: auto;
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem;
+    }
+
+    .carousel-indicators {
+        bottom: 20px !important;
+    }
+
+    .carousel-indicators button {
+        width: 5px !important;
+        height: 5px !important;
+        margin: 0 4px !important;
+    }
+
+    /* Cards */
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Service Cards */
+    .service-card {
+        margin-bottom: 1rem;
+        padding: 1.5rem !important;
+    }
+
+    /* Sections */
+    section {
+        padding: 2rem 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem 0 !important;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    footer a {
+        font-size: 0.85rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    footer i {
+        margin-right: 0.5rem;
+    }
+
+    /* Team Image */
+    .team-image {
+        height: 120px;
+    }
+
+    /* Blog Card */
+    .blog-image {
+        min-height: 120px;
+    }
+
+    /* Stat Card */
+    .stat-card h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        border: none;
+        padding: 0.25rem 0.5rem;
+    }
+
+    .navbar-collapse {
+        background-color: white;
+        border-top: 1px solid #e0e0e0;
+        padding: 0.5rem 0;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-item {
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .nav-link {
+        margin-left: 0 !important;
+        padding: 1rem 1.5rem !important;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        color: #333 !important;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-link:hover {
+        background-color: #f5f5f5;
+    }
+
+    .nav-link.active {
+        background-color: #f0f0f0;
+        color: var(--primary-color) !important;
+    }
+
+    .nav-link.active::before {
+        display: none;
+    }
+
+    .nav-link.has-dropdown::after {
+        content: '';
+        display: none;
+    }
+
+    .navbar-cta {
+        margin-left: 0 !important;
+        margin: 1rem 1.5rem;
+        width: auto;
+        text-align: center;
+        padding: 0.75rem 1.5rem !important;
+        display: inline-block;
+        border-radius: 4px;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+    /* Page Header */
+    .py-4 {
+        padding: 1rem 0 !important;
+    }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-section {
+        min-height: 450px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .team-image {
+        height: 140px;
+    }
+
+    .stat-card h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero-section {
+        min-height: 500px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .team-image {
+        height: 150px;
+    }
+
+    .stat-card h3 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero-section {
+        min-height: 600px;
+    }
+
+    .navbar {
+        padding: 1rem 0;
+    }
+
+    .nav-link {
+        margin-left: 2rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    section {
+        padding: 80px 0;
+    }
+
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Very Large Devices (xxl desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    section h2 {
+        font-size: 2.8rem;
+    }
+}
+
+/* Tablet-specific adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        height: 100%;
+    }
+
+    .contact-form {
+        padding: 2rem;
+    }
+}
+
+/* Print styles */
+@media print {
+
+    .navbar,
+    footer,
+    .btn,
+    .contact-form {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* High resolution displays (retina, 2x) */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+    /* Optimize images and text rendering */
+    img {
+        image-rendering: high-quality;
+    }
+}
+
+/* Touch devices */
+@media (hover: none) and (pointer: coarse) {
+
+    .card,
+    .service-card,
+    .team-card,
+    .blog-card {
+        transform: none;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+    }
+}
+
+/* Landscape orientation */
+@media (orientation: landscape) and (max-height: 600px) {
+    .hero-section {
+        min-height: 300px;
+        padding: 1rem 0;
+    }
+
+    section {
+        padding: 1.5rem 0;
+    }
+}
+
+/* Dark mode support (for future implementation) */
+@media (prefers-color-scheme: dark) {
+    /* Add dark mode styles here when ready */
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
+
+/* Mobile navigation adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #f8f9fa;
+        border-top: 1px solid #ddd;
+        margin-top: 0.5rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active {
+        border-bottom: 3px solid var(--primary-color);
+        color: var(--primary-color) !important;
+    }
+}
+
+/* Flexible grid for various screen sizes */
+@media (max-width: 767.98px) {
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    .col-lg-3 {
+        width: 100%;
+    }
+}
+
+/* Modal/Overlay adjustments */
+@media (max-width: 575.98px) {
+    .modal-content {
+        border-radius: 12px;
+    }
+
+    .modal-body {
+        padding: 1.5rem;
+    }
+}
+
+/* Flexbox adjustments for mobile */
+@media (max-width: 767.98px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .gap-2 {
+        gap: 1rem !important;
+    }
+
+    .ms-auto {
+        margin-left: 0 !important;
+    }
+}
+
+/* Table responsiveness */
+@media (max-width: 767.98px) {
+    .table {
+        font-size: 0.85rem;
+    }
+
+    .table td,
+    .table th {
+        padding: 0.5rem;
+    }
+}
