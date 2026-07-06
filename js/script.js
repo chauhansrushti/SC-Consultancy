@@ -162,7 +162,12 @@ if (newsletterForm) {
 
 // Collapse navbar on mobile when a link is clicked
 document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function() {
+    link.addEventListener('click', function(e) {
+        // Do not collapse navbar if it's a dropdown toggle
+        if (this.classList.contains('has-dropdown') || this.getAttribute('data-bs-toggle') === 'dropdown') {
+            return;
+        }
+
         const navbarToggler = document.querySelector('.navbar-toggler');
         const navbarCollapse = document.querySelector('.navbar-collapse');
         
