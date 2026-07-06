@@ -1,0 +1,12 @@
+# Frontend Ignore Rules
+node_modules/
+.env
+.env.local
+.DS_Store
+*.log
+dist/
+build/
+.cache/
+*.tmp
+.vscode/
+.idea/

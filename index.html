@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC Consultancy - Book Keeping & Accounting</title>
+    <meta name="description"
+        content="SC Consultancy specializes in Co-operative Society Accounts & Compliance, accounting, bookkeeping, GST, TDS, and financial planning services in Mumbai.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="images/logo-main.png" alt="SC Consultancy" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link has-dropdown" href="services.html">SERVICES</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link has-dropdown" href="about.html" id="aboutDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">ABOUT</a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html#why-us">Why SC Consultancy</a></li>
+                            <li><a class="dropdown-item" href="company.html">Company</a></li>
+                            <li><a class="dropdown-item" href="team.html">Meet the Team</a></li>
+                            <li><a class="dropdown-item" href="about.html#career">Career</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link has-dropdown" href="expertise.html">EXPERTISE</a></li>
+                    <li class="nav-item"><a class="nav-link has-dropdown" href="industry.html">INDUSTRY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="engagement.html">ENGAGEMENT MODEL</a></li>
+                    <li class="nav-item"><a class="nav-link has-dropdown" href="resources.html">RESOURCES</a></li>
+                    <li class="nav-item"><a class="nav-link navbar-cta" href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Video Background & Rotating Title -->
+    <section class="hero-carousel">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="images/Accounting Services Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content-wrapper">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <!-- Carousel Items - ONLY Title Changes -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h1 class="hero-title">Book Keeping & Accounting Services</h1>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="hero-title">Co-operative Society Specialist</h1>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="hero-title">GST & TDS Assistance</h1>
+                    </div>
+                    <div class="carousel-item">
+                        <h1 class="hero-title">Financial Planning & Analysis</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Static Content - Never Changes -->
+            <div class="hero-static-content">
+                <p class="hero-description">Professional accounting solutions for your business</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-light btn-lg">Get Started Now</a>
+                    <a href="services.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Why Choose SC Consultancy?</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <i class="fas fa-book-open fa-3x text-primary p-3" style="color: #17a2b8 !important;"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Expert Accounting</h5>
+                            <p class="card-text">Professional accounting with inventory management and ledger
+                                reconciliation for your business.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <i class="fas fa-piggy-bank fa-3x text-success p-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Affordable Excellence</h5>
+                            <p class="card-text">Cost-effective & scalable professional services designed for every
+                                business owner and accountant.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <i class="fas fa-users fa-3x text-info p-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Industry Experts</h5>
+                            <p class="card-text">Highly seasoned professionals with deep industry insights ready to
+                                support your business.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <i class="fas fa-landmark fa-3x text-warning p-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Co-operative Society Specialist</h5>
+                            <p class="card-text">Specialized expertise in Co-operative Society accounts and compliance
+                                requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <i class="fas fa-microchip fa-3x text-danger p-3"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Tech Pioneers</h5>
+                            <p class="card-text">We embrace automation & technology to free up valuable time for your
+                                core business.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 text-center">
+                        <i class="fas fa-shield-alt fa-3x p-3" style="color: #17a2b8 !important;"></i>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Data Security</h5>
+                            <p class="card-text">Your critical data is protected with stringent security protocols and
+                                best practices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Our Services</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card bg-white p-4 rounded shadow-sm">
+                        <h5><i class="fas fa-book-open text-primary"></i> Accounting with Inventory</h5>
+                        <p>Comprehensive accounting with inventory management and tracking.</p>
+                        <a href="services.html" class="text-primary">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card bg-white p-4 rounded shadow-sm">
+                        <h5><i class="fas fa-sync text-success"></i> Ledger Reconciliation</h5>
+                        <p>Expert ledger reconciliation to ensure accurate financial records.</p>
+                        <a href="services.html" class="text-primary">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card bg-white p-4 rounded shadow-sm">
+                        <h5><i class="fas fa-file-invoice text-info"></i> Account Finalization</h5>
+                        <p>Complete account finalization and closing for year-end compliance.</p>
+                        <a href="services.html" class="text-primary">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card bg-white p-4 rounded shadow-sm">
+                        <h5><i class="fas fa-search text-warning"></i> Internal Audit Assistance</h5>
+                        <p>Professional internal audit support and assistance for compliance.</p>
+                        <a href="services.html" class="text-primary">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card bg-white p-4 rounded shadow-sm">
+                        <h5><i class="fas fa-calculator text-danger"></i> GST & TDS Assistance</h5>
+                        <p>Complete GST and TDS filing assistance and compliance support.</p>
+                        <a href="services.html" class="text-primary">Learn More →</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="service-card bg-white p-4 rounded shadow-sm">
+                        <h5><i class="fas fa-chart-line" style="color: #17a2b8;"></i> Financial Planning</h5>
+                        <p>Strategic financial planning and business accounting for growth.</p>
+                        <a href="services.html" class="text-primary">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Client Testimonials</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card bg-light p-4 rounded">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"SC Consultancy has been instrumental in streamlining our accounting processes.
+                            Highly recommended!"</p>
+                        <p class="fw-bold mb-0">John Smith</p>
+                        <p class="text-muted small">CEO, Tech Innovations Inc.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card bg-light p-4 rounded">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Professional, reliable, and cost-effective. They truly understand business
+                            needs."</p>
+                        <p class="fw-bold mb-0">Sarah Johnson</p>
+                        <p class="text-muted small">Owner, Green Associates</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="testimonial-card bg-light p-4 rounded">
+                        <div class="mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                        <p class="mb-3">"Their team's expertise has saved us thousands in tax planning. Exceptionally
+                            valuable!"</p>
+                        <p class="fw-bold mb-0">Michael Brown</p>
+                        <p class="text-muted small">Finance Manager, Global Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 text-white text-center" style="background: linear-gradient(135deg, #17a2b8 0%, #117a8b 100%);">
+        <div class="container">
+            <h2 class="mb-3">Ready to Transform Your Business?</h2>
+            <p class="lead mb-4">Get started with expert financial solutions today</p>
+            <a href="contact.html" class="btn btn-light btn-lg">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">SC Consultancy</h5>
+                    <p>Professional business solutions for your success.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50">Home</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="about.html" class="text-white-50">About</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Contact Info</h5>
+                    <p class="text-white-50">
+                        <i class="fas fa-envelope"></i> scconsultancy1010@gmail.com<br>
+                        <i class="fas fa-phone"></i> Srushti Chauhan: +91 90820 73676<br>
+                        <i class="fas fa-phone"></i> priti: +91 79778 48204<br>
+                        <i class="fas fa-map-marker-alt"></i> 27, ram Nagar Society, Goregaon, Mumbai
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-white-50">
+            <p class="text-center text-white-50 mb-0">&copy; 2024 SC Consultancy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
